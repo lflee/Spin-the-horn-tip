@@ -1,12 +1,12 @@
 <html>
 <meta charset="UTF-8">
-<head>
 
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>轉牛角尖</title>
     <style>
     body {
-        margin: 0;
+        margin: 10;
     }
     
     canvas {
@@ -20,7 +20,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r14/Stats.min.js"></script>
 
-<!--
+    <script src="TrackballControls.js"></script>    
+    <script src="Detector.js"></script>    
+    <!--
 <script type="text/javascript">
 var stats = new Stats();
 stats.setMode( 1 ); // 0: fps, 1: ms, 2: mb
@@ -47,34 +49,43 @@ var update = function () {
 requestAnimationFrame( update );
 </script>
 -->
-
     <script>
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-        // lights
- 
-        light = new THREE.DirectionalLight( 0xffffff );
-        light.position.set( 1, 1, 1 );
-        scene.add( light );
- 
-        light = new THREE.DirectionalLight( 0x002288 );
-        light.position.set( -1, -1, -1 );
-        scene.add( light );
- 
-        light = new THREE.AmbientLight( 0x222222 );
-        scene.add( light );
+    var cameraControls;
+    var clock = new THREE.Clock();
 
 
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+     // document.getElementById("hornDiv").appendChild(renderer.domElement);
+     document.body.appendChild(renderer.domElement);
+
+// Trackball Controls
+    cameraControls = new THREE.TrackballControls(camera, renderer.domElement);
+    cameraControls.target.set(0, 0, 0);
 
 
-            var mouse = new THREE.Vector2(), INTERSECTED;
+    // lights
+
+    light = new THREE.DirectionalLight(0xffffff);
+    light.position.set(1, 1, 1);
+    scene.add(light);
+
+    light = new THREE.DirectionalLight(0x002288);
+    light.position.set(-1, -1, -1);
+    scene.add(light);
+
+    light = new THREE.AmbientLight(0x222222);
+    scene.add(light);
 
 
-    var geometry = new THREE.CylinderGeometry( 0, 3, 10, 32, 50, false );
+
+    var mouse = new THREE.Vector2(),
+        INTERSECTED;
+
+
+    var geometry = new THREE.CylinderGeometry(0, 3, 10, 32, 50, false);
     var material = new THREE.MeshPhongMaterial({
         color: 0xffffff
     });
@@ -84,50 +95,68 @@ requestAnimationFrame( update );
     camera.position.z = 10;
 
     function render() {
+
+        var delta = clock.getDelta();
+
+
         requestAnimationFrame(render);
-        horn.rotation.x += 0.01;
-        horn.rotation.y += 0.02;
-        horn.rotation.z += 0.03;
+
+        cameraControls.update(delta);
+
+
+
+        // horn.rotation.x += 0.01;
+        // horn.rotation.y += 0.02;
+        // horn.rotation.z += 0.03;
         renderer.render(scene, camera);
-        stats.update();
+        // stats.update();
     }
 
 
 
     render();
 
-                document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-document.addEventListener( 'click', onDocumentMouseClick, false );
+    document.addEventListener('mousemove', onDocumentMouseMove, false);
+    document.addEventListener('click', onDocumentMouseClick, false);
 
 
-            function onDocumentMouseMove( event ) {
+    function onDocumentMouseMove(event) {
 
-                event.preventDefault();
+        event.preventDefault();
 
-                mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-                mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-            }
+    }
 
-            function onDocumentMouseClick( event ) {
+    function onDocumentMouseClick(event) {
 
-                console.log("Clicked!");
-    camera.position.z = 15;
+        console.log("Clicked!");
+        camera.position.z = 15;
 
-            }
+    }
 
-function onWindowResize() {
+            function onWindowResize() {
+
+                windowHalfX = window.innerWidth / 2;
+                windowHalfY = window.innerHeight / 2;
 
                 camera.aspect = window.innerWidth / window.innerHeight;
                 camera.updateProjectionMatrix();
 
-                effect.setSize( window.innerWidth, window.innerHeight );
+                renderer.setSize( window.innerWidth, window.innerHeight );
 
             }
 
-                window.addEventListener( 'resize', onWindowResize, false );
-
+    window.addEventListener('resize', onWindowResize, false);
     </script>
+
+    <div id="head">
+        轉牛角尖        
+    </div>
+    <canvas id="hornDiv">
+        
+    </canvas>
 </body>
 
 </html>
