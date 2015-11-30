@@ -1,4 +1,9 @@
 node_modules
+<<<<<<< HEAD
 dist
 bower_components
 .tmp
+=======
+.tmp
+.publish/
+>>>>>>> origin/master
