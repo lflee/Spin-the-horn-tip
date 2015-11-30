@@ -1,0 +1,9 @@
+{
+  "firebase": "Spin-the-horn-tip",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

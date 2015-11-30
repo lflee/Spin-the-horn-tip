@@ -1,0 +1,90 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.1.0
+[debug] Time:         Mon Nov 30 2015 11:56:51 GMT+0800 (HKT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'Spin-the-horn-tip'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/Spin-the-horn-tip/uploads/-K4LXJ6gVU9Gr_Zr3pSN?token=XXX&fileCount=649&message= 
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.1.0
+[debug] Time:         Mon Nov 30 2015 12:04:04 GMT+0800 (HKT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'Spin-the-horn-tip'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/Spin-the-horn-tip/uploads/-K4LYxiBc4sZJR4Im45n?token=XXX&fileCount=649&message= 
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.1.0
+[debug] Time:         Mon Nov 30 2015 12:15:46 GMT+0800 (HKT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'Spin-the-horn-tip'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/Spin-the-horn-tip/uploads/-K4Lad8qLPksPkGPnwok?token=XXX&fileCount=644&message= 
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.1.0
+[debug] Time:         Mon Nov 30 2015 12:21:10 GMT+0800 (HKT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'Spin-the-horn-tip'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/Spin-the-horn-tip/uploads/-K4Lbs7cYQjTjlwtAWcg?token=XXX&fileCount=644&message= 
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] Platform:     darwin
+[debug] Node Version: v5.1.0
+[debug] Time:         Mon Nov 30 2015 12:21:41 GMT+0800 (HKT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/Spin-the-horn-tip/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'Spin-the-horn-tip'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing dist directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/Spin-the-horn-tip/uploads/-K4Lbzi0a7MXrO0l3dw0?token=XXX&fileCount=644&message= 
+[debug] <<< HTTP RESPONSE 200
