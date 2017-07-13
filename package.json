@@ -1,4 +1,6 @@
 {
+  "name": "spin the horn tip",
+  "version": "",
   "private": true,
   "devDependencies": {
     "browser-sync": "^2.7.7",
