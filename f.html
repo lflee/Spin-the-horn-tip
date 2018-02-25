@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Calling Anagram API at http://www.anagramica.com/api</title>
+    <title>峰 web share target</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
@@ -11,21 +11,22 @@
     <script>
 
         function callAndDisplayAnagrams(){
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://www.anagramica.com/best/:dormitory", true);
-            xhr.setRequestHeader("Content-type", "application/json");
-            xhr.send();
-            var response = JSON.parse(xhr.responseText);
+            // var xhr = new XMLHttpRequest();
+            // xhr.open("POST", "http://www.anagramica.com/best/:dormitory", true);
+            // xhr.setRequestHeader("Content-type", "application/json");
+            // xhr.send();
+            // var response = JSON.parse(xhr.responseText);
 
             // Console.log(response);
-            Console.log("Start from scratch");
+            
+            document.getElementById("Anagrams").innerHTML = "Yes?";
             // halted, the api only serves via http, not https
         }
     </script>
 
 </head>
 <body>
-    <h1>Calling Anagram API at http://www.anagramica.com/api</h1>
+    <h1>峰 web share target</h1>
 
     <textarea name="input" id="input" cols="30" rows="1"></textarea>
     <button type="submit" onclick="callAndDisplayAnagrams()">Anagram it!</button>
