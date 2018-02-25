@@ -5,7 +5,7 @@
   "display": "standalone",
 
   "share_target": {
-    "url_template": "sharetarget.html?title={title}&text={text}&url={url}"
+    "url_template": "f.html?title={title}&text={text}&url={url}"
   },
   "icons": [{
     "src": "images/icon-16.png",
