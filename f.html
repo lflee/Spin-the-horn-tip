@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>峰 web share target</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
 
     <script>
 
@@ -28,6 +28,41 @@
 
 </head>
 <body>
+
+        <h1>Web Share Target Test App</h1>
+        <div id="output"></div>
+        <p>This is a test app for the <a href="https://github.com/WICG/web-share-target">Web
+        Share Target API</a>. It will only work in browsers that have implemented the
+        draft proposal. At the time of writing, this works with:</p>
+        <ul>
+          <li>Google Chrome for Chrome OS, Windows, or Linux, with
+            chrome://flags#enable-experimental-web-platform-features enabled.
+            <ul>
+              <li>To "register" this app with Google Chrome, click the Chrome menu
+                &rarr; More tools &rarr; Add to desktop/shelf (you can cancel the
+                dialog; this just forces the manifest to download). Then it should
+                show up as a target when using <a href="https://github.com/WICG/web-share">Web
+                Share</a> (<a href="https://wicg.github.io/web-share/demos/share.html">demo
+                site</a>).
+              </li>
+            </ul>
+          </li>
+          <li>Google <a
+              href="https://play.google.com/store/apps/details?id=com.chrome.dev">Chrome
+              Dev</a> or <a
+            href="https://play.google.com/store/apps/details?id=com.chrome.canary">Chrome
+            Canary</a> for Android.
+            <ul>
+              <li>To "register" this app with the Android OS, click the Chrome menu
+                &rarr; Add to home screen. Then it should show up as a target when
+                sharing from any other Android app (including Web Share).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      
+
+
     <h1>峰 web share target</h1>
 
     <textarea name="input" id="input" cols="30" rows="1"></textarea>
